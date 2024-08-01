@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+    }
+    :root{
+        --Primarycolor: #5bbc56;
+    }
+    header{
+        border-bottom: 2px solid var(--Primarycolor);
+    }
+    .header-content{
+        margin: auto 180px;
+        padding: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 168px;
+        height: 24px;
+    }
+    .logo-icon{
+        margin-left: 4px;
+        width: 14px;
+        height: 14px;
+    }
+    .Data{
+        font-weight: 600;
+    }
+    .main-nav{
+        list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    justify-content: space-between;
+    }
+    .main-nav-list{
+        text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .btn{
+        background-color: var(--Primarycolor);
+        border: 1px solid var(--Primarycolor);
+        padding: 6px 14px;
+        color: #e9fac8;
+        border-radius: 6px;
+    }
+    .Image-left-text{
+        padding: 100px;
+    }
+.image-employe{
+    width: 432px;
+height: 445px;
+margin-top: 64px;
+
+}
+
+
+article{
+    display: grid;
+   
+    background-color: #f7f7f7;
+    grid-template-columns: 1fr 500px;
+    margin-bottom: 110px;
+}
+.welcome-title{
+    font-size: 42px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 18px;
+}
+.welcome-title span{
+ color: var(--Primarycolor);
+}
+.Image-left-text .quotes{
+    font-family: "Poppins", sans-serif;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-touch{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: var(--Primarycolor);
+    border: 1px solid var(--Primarycolor);
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 30px;
+}
+section{
+    padding: 36px;
+}
+.section-title{
+    font-size: 42px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 30px;
+    color: var(--Primarycolor);
+
+}
+.Client-section{
+    margin-bottom: 290px;
+}
+.Our-clients{
+    display: flex;
+    justify-content: center;
+}
+.client-box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 64px;
+}
+.client-box .items{
+    border: 1px solid #80808040;
+    border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+.gallery-section{
+background: rgba(255, 251, 242, 1);
+ 
+}
+.gallery-content{
+    transform: translate(10px, -195px);
+}
+.Gallery-box{
+    margin: auto 86px;
+    display: grid;
+    grid-template-columns: 320px 438px 314px;
+    column-gap: 18px;
+    grid-template-rows: 224px;
+    row-gap: 18px;
+    margin-bottom: 45px;
+}
+.Gallery-box img{
+    width: 100%;
+    height: 100%;
+}
+.Gallery-box img:last-child{
+    grid-column: 3 / -1;
+}
+.image-tree{
+    background-image: url(assets/Rectangle\ 512.png);
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+  color: white;
+}
+.post-main{
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(234, 255, 234, 0.55);
+    height: 440px;
+  border-radius: 4px;
+  position: relative;
+}
+.post-time{
+    color: rgba(203, 203, 203, 1);
+ font-size: 10px;
+}
+.post-role{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    padding: 4px 8px;
+}
+.post-content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(38px, -34px);
+    font-family: "Poppins", sans-serif;
+}
+.feature-content{
+    transform: translate(10px, -195px);
+}
+.feature-title{
+    font-size: 54px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    color: var(--Primarycolor);
+}
+.feature-box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 14px;
+    margin: auto 150px;
+    row-gap: 14px;
+}
+.box{
+
+}
+.box img{
+    width: 40px;
+    height: 40px;
+}
+</style>
+<body>
+    <header>
+        <div class="header-content">
+        <img class="logo" src="assets/Layer_1.png" alt="">
+         <nav class="main-nav">
+             <li><a href="#" class="main-nav-list" >Home</a></li>
+             <li><a href="#" class="main-nav-list">Who We Are <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="logo-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg>
+               </a></li>
+             <li><a href="#" class="main-nav-list">What We Do <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="logo-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg></a></li>
+             <li><a href="#" class="main-nav-list">Insights <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="logo-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+              </svg></a></li>
+             <li><a href="#" class="main-nav-list">Careers</a></li>
+             <li><a href="#" class="main-nav-list">Contact us</a></li>
+         </nav>
+         <button class="btn">
+         Let's get Started
+         </button>
+    </div>
+    </header>
+    
+    <main>
+        <article>
+            <div class="Image-left-text">
+                <p class="welcome-title">Welcome to <span>Seed Data</span> Innovating Your Digital Future</p>
+                <p class="quotes">we specialize in cutting-edge technology solutions that drive </p>
+                <p class="quotes">business success. Let us transform your digital presence with our</p>
+                <p class="quotes">innovative and reliable IT services.</p>
+
+                <button class="btn-touch">Get in Touch   <svg width="44" height="21" viewBox="0 0 44 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.734375 6.82332L6.97772 6.59261L12.7185 6.82332L16.3418 7.2762C16.3418 7.2762 25.2734 8.77095 24.746 13.5169C24.562 15.1733 23.7036 16.8973 21.9678 18.0805C19.8044 19.593 15.9159 19.4273 14.1994 16.681C11.5627 12.4624 16.2321 8.95809 16.2321 8.95809C16.2321 8.95809 19.202 6.66146 28.6967 6.17098C38.1915 5.68062 42.5593 6.56966 42.5593 6.56966" stroke="white" stroke-width="2"/>
+                    <path d="M40.5094 0.967773C42.1763 3.58716 42.6548 5.37903 42.8441 6.63208L40.2798 11.5692" stroke="white" stroke-width="2"/>
+                    </svg></button>
+            </div>
+                <img src="assets/4879237-removebg.png" class="image-employe" alt="Image Of Women Employee" />
+        </article>
+        <section class="Client-section">
+      
+            <div class="section-title">
+                <p class="Our-clients">Our Clients</p>
+            </div>
+            <div class="client-box">
+                <div class="items"><img src="assets/image 2.png" alt="BestSeller" height="36" ></div>
+                <div class="items"><img src="assets/image 21.png" alt="THEPHOTOACADEMY" height="36"></div>
+                <div class="items"><img src="assets/image 2-1.png" alt="Chromavid"  height="36px" ></div>
+                <div class="items"><img src="assets/image 4.png" alt="Blink"  height="36px" ></div>
+                <div class="items"><img src="assets/image 24.png" alt="eddyline"  height="36px" ></div>
+                <div class="items"><img src="assets/image 25.png" alt="ROMEOPOWER"  height="24px" ></div>
+            </div>
+       
+        </section>
+
+    <section class="gallery-section">
+        <div class="gallery-content">
+            <div class="section-title">
+                <p class="Our-clients">Our Event Gallery</p>
+            </div>
+            <div class="Gallery-box">
+                <img src="assets/Rectangle 511.png" alt="">
+                <!-- <img src="assets/Rectangle 512.png" alt="" style="height: 465px;"> -->
+                 <div class="image-tree">
+                       
+                        <div class="post-main">
+                            <div class="post-content">
+                        <p class="post-time">Job Posted 5 days ago</p>
+                        <p class="post-role">Ui/Ux Designer</p>
+                       </div>
+                       </div>
+                       
+
+                    
+                 </div>
+               
+                <img src="assets/Rectangle 514.png" alt="">
+                <img src="assets/Rectangle 513.png" alt="">
+                <img src="assets/Rectangle 515.png" alt="">
+            </div>
+        </div>
+   </section>
+
+   <section class="feature-section">
+<div class="feature-content">
+    <div class="feature-title">
+        <p class="Our-clients">Our Core Features</p>
+    </div>
+    <div class="feature-box">
+              <div class="box">
+                <img src="assets/pie-chart-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/chat-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/discount-svgrepo-com (2).png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/trophy-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/2312493.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/news-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/Group 62.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/Mask Group 3.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/Group 84.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/conference-live-video-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/phone-booth-architecture-and-city-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/Path 1079.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/user-profile-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/survey-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/gnome-mime-x-gtkrc-svgrepo-com.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/dashboard.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/publishing.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+              <div class="box">
+                <img src="assets/share.png" alt="">
+                <p class="box-title">Stastics</p>
+              </div>
+             
+    </div>
+</div>
+   
+    
+</section>
+
+    </main>
+</body>
+</html>
