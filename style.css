@@ -350,3 +350,110 @@
     background: linear-gradient(351.65deg, #ACE1AF -20.59%, #B0EBB4 -0.43%, #BFF6C3 21.42%, #E0FBE2 45.96%);
    padding: 20px 60px
     }
+    main{
+        margin-bottom: 200px;
+    }
+    .footer-content{
+        display: grid;
+    grid-template-columns: 380px 1fr 1fr 310px;
+    gap: 88px;
+    padding: 48px 0px;
+    }
+    .footer-logo-title{
+        font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 8px;
+
+    }
+    .Sign-up-Letter{
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+    .list-heading-nav{
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .nav-footer{
+        list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 24px;
+
+    }
+    .nav-footer a{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    }
+    .footer-logo input{
+        padding: 12px;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    width: 84%;
+    border-radius: 51px;
+    }
+    .sign-up-input{
+        position: relative;
+    }
+    .sign-up-input img{
+    height: 40px;
+    position: absolute;
+    right: 60px;
+    top: 0;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .copyright-text{
+        color:rgb(150 173 165);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .email{
+  font-weight: 800;
+  font-size: 12px;
+    }
+    .mailid{
+        font-size: 12px; 
+    }
+    .social-box{
+   display: grid;
+   grid-template-columns: repeat(4,60px);
+
+
+
+    }
+    .social-box-item{
+        background: white;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 39px;
+    margin: 10px;
+ border: 1px solid rgba(197, 197, 197, 1);
+    }
+    .social-box-item img{
+        height: 20px;
+    }
+    .Adv-box{
+        background-color: white;
+        padding: 4px;
+        border-radius: 8px;
+        border: 1px solid rgba(197, 197, 197, 1)
+    }
+    .Adv-box img{
+       height: 75px;
+    }
+    .External-adv{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
